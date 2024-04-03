@@ -1,34 +1,53 @@
-# Aplicación de Lista de Tareas (Todo List)
+# Proyecto de Prueba Técnica Licon
 
-Esta es una aplicación web desarrollada con ReactJS y JavaScript que permite gestionar una lista de tareas (todos). La aplicación consulta un endpoint para obtener los datos de las tareas, los almacena en un estado global utilizando la librería "Zustand" y los muestra en forma de tarjetas. Además, permite agregar nuevas tareas mediante un formulario y actualiza el estado global para mostrar las nuevas tareas agregadas. Dependiendo del estado "completed" de cada tarea, se alternan los colores de las tarjetas.
-
-## Componentes
-
-- **App.js**: El componente principal de la aplicación que contiene el diseño general y maneja la lógica principal.
-- **List.js**: Un componente que muestra la lista de tareas en forma de tarjetas.
-- **Card.js**: Un componente que representa una tarjeta individual para una tarea, mostrando los atributos "id", "title" y "completed".
-- **AddItem.js**: Un formulario que permite agregar nuevas tareas a la lista.
-
-## Funcionalidades
-
-- Consulta el endpoint "https://jsonplaceholder.typicode.com/todos" para obtener la lista de tareas.
-- Almacena los datos de las tareas en un estado global utilizando Zustand.
-- Muestra las tareas en forma de tarjetas, excluyendo el atributo "userId" y mostrando los atributos "id", "title" y "completed".
-- Permite agregar nuevas tareas mediante un formulario.
-- Actualiza el estado global para mostrar las nuevas tareas agregadas.
-- Alterna el color de las tarjetas dependiendo del estado "completed" de cada tarea.
-
-## Tecnologías Utilizadas
-
-- ReactJS: Para el desarrollo de la interfaz de usuario y la lógica de la aplicación.
-- JavaScript: Para la programación del lado del cliente.
-- Zustand: Para la gestión del estado global de la aplicación.
-
-Esta aplicación proporciona una interfaz interactiva para gestionar una lista de tareas, permitiendo agregar nuevas tareas y ver su estado de completado.
+Este proyecto es una prueba técnica para la empresa Licon. La aplicación muestra una lista de tareas obtenidas de JSONPlaceholder API y permite agregar nuevas tareas.
 
 ## Instalación
 
-1. Clona el repositorio:
+1. Clona este repositorio en tu máquina local.
+2. Navega al directorio del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
 
-```bash
-git clone <https://github.com/emanuel545/prueba.git>
+## Uso
+
+1. Después de instalar las dependencias, ejecuta `npm start` para iniciar la aplicación.
+2. La aplicación se abrirá en tu navegador predeterminado.
+
+## Funcionalidades
+
+- La aplicación muestra una lista de tareas obtenidas de JSONPlaceholder API.
+- Permite agregar nuevas tareas a la lista.
+- Las nuevas tareas se agregan al final de la lista.
+- Se utiliza Zustand para administrar el estado global de la aplicación.
+
+## Tecnologías Utilizadas
+
+- React.js
+- Zustand
+- CSS
+
+## Estructura del Proyecto
+
+src/
+|-- components/
+| |-- AddItem.js
+| |-- card.js
+| |-- List.js
+| |-- store
+|-- app.css
+|-- App.js
+|-- index.js
+
+## Contribuir
+
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/feature-name`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Add some feature'`).
+4. Haz push a la rama (`git push origin feature/feature-name`).
+5. Abre un Pull Request.
+
+## Créditos
+
+Este proyecto fue desarrollado por [Legorreta Nava Emanuelle].

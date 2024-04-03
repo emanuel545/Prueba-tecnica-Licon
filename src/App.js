@@ -24,13 +24,9 @@ function App() {
         <AddItem />
       </div>
       </section>
-      
-    
-      
     </div>
     
   );
 }
 
-
-export default App;
+export default App;   
