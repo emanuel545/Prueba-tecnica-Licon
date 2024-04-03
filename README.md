@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Aplicación de Lista de Tareas (Todo List)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es una aplicación web desarrollada con ReactJS y JavaScript que permite gestionar una lista de tareas (todos). La aplicación consulta un endpoint para obtener los datos de las tareas, los almacena en un estado global utilizando la librería "Zustand" y los muestra en forma de tarjetas. Además, permite agregar nuevas tareas mediante un formulario y actualiza el estado global para mostrar las nuevas tareas agregadas. Dependiendo del estado "completed" de cada tarea, se alternan los colores de las tarjetas.
 
-## Available Scripts
+## Componentes
 
-In the project directory, you can run:
+- **App.js**: El componente principal de la aplicación que contiene el diseño general y maneja la lógica principal.
+- **List.js**: Un componente que muestra la lista de tareas en forma de tarjetas.
+- **Card.js**: Un componente que representa una tarjeta individual para una tarea, mostrando los atributos "id", "title" y "completed".
+- **AddItem.js**: Un formulario que permite agregar nuevas tareas a la lista.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Consulta el endpoint "https://jsonplaceholder.typicode.com/todos" para obtener la lista de tareas.
+- Almacena los datos de las tareas en un estado global utilizando Zustand.
+- Muestra las tareas en forma de tarjetas, excluyendo el atributo "userId" y mostrando los atributos "id", "title" y "completed".
+- Permite agregar nuevas tareas mediante un formulario.
+- Actualiza el estado global para mostrar las nuevas tareas agregadas.
+- Alterna el color de las tarjetas dependiendo del estado "completed" de cada tarea.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+- ReactJS: Para el desarrollo de la interfaz de usuario y la lógica de la aplicación.
+- JavaScript: Para la programación del lado del cliente.
+- Zustand: Para la gestión del estado global de la aplicación.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esta aplicación proporciona una interfaz interactiva para gestionar una lista de tareas, permitiendo agregar nuevas tareas y ver su estado de completado.
 
-### `npm run build`
+## Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona el repositorio:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone <https://github.com/emanuel545/prueba.git>
